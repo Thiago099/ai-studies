@@ -1,0 +1,2 @@
+model_checkpoint_path: "split-distilaiton.bin"
+all_model_checkpoint_paths: "split-distilaiton.bin"
