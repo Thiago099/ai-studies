@@ -2,7 +2,7 @@ The gradient descent solves the problem of transforming x into y, however it has
 
 I belive the diffusion models work well because they the x - y conversion happens more times, giving more guidance about what should be done.
 
-All of this came to my mind while I was creating a diffusion model for studying purposes. Instead of timestamp encoding I went for a more simple solution of separating my model into chunks training each chunk separately then joining them together. And then came the thought, on this diffusion model I had a clear x and y for each layer group making it a lot more efficient than if I train all the layers together. After iv done 100 epochs for each chunk, I trained the full model for another 100 epochs with the x been the random noise and the label, and y the denoised output, and it got worse. Here is a comparison
+All of this came to my mind while I was creating a diffusion model for studying purposes. Instead of timestamp encoding I went for a more simple solution of separating my model into chunks training each chunk separately then joining them together. And then came the thought, on this diffusion model I had a clear x and y for each layer group making it a lot more efficient than if I train all the layers together. After iv done 100 epochs for each chunk, I trained the full model for another 100 epochs with the x been the random noise and the label, and y the original image, and it got worse. Here is a comparison
 
 
 
