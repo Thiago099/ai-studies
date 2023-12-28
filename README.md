@@ -1,4 +1,4 @@
-The gradient descent solves the problem of transforming x into y, however it has many layers in between. I do undesthant what happens in the last layer, however after that, I don't know exactly how it is optimized. All I can think is that the derivative can find a good solution faster because of the noise that is generated in the weight and bias values. I believe I was misunderstood about how it works, however if that is not the case, what is happening that is very inefficient.
+The gradient descent solves the problem of transforming x into y, however it has many layers in between. I do undesthant what happens in the last layer, however after that, I don't know exactly how it is optimized. All I can think is that the derivative can find a good solution faster because of the noise that is generated in the weight and bias values. I believe I was misunderstood about how it works, however if that is not the case, what is happening is very inefficient.
 
 I belive the diffusion models work well because they the x - y conversion happens more times, giving more guidance about what should be done.
 
