@@ -1,9 +1,6 @@
-
-
-
-The gradient descent solves the problem of transforming x into y, however it has many layers in between. I do undesthant what happens in the last layer, however after that, I don't know exactly how it is optimized. All I can think is that the derivative can find a good solution because of the noise that is generated in the weight and bias values. I believe I was misunderstood about how it works, however if that is not the case, what is happening that is very inefficient.
-If that is the case, maybe diffusion models work well because they the x - y conversion happens more times, making the model more efficient.
-All of this came to my mind while I was creating a diffusion model for studying purposes. Instead of timestamp encoding I went for a more simple solution of separating my model into chunks training each chunk separately then joining them together. And then came the thought, on this diffusion model I had a clear x and y for each layer group making it a lot more efficient than if I train all the layers together. After iv done with 100 epochs for each chunk, I trained the full model for another 100 epochs with the x been the random noise y the denoised output, and it got worse. Here is a comparison
+The gradient descent solves the problem of transforming x into y, however it has many layers in between. I do undesthant what happens in the last layer, however after that, I don't know exactly how it is optimized. All I can think is that the derivative can find a good solution faster because of the noise that is generated in the weight and bias values. I believe I was misunderstood about how it works, however if that is not the case, what is happening that is very inefficient.
+I belive the diffusion models work well because they the x - y conversion happens more times, giving more guidance about what should be done.
+All of this came to my mind while I was creating a diffusion model for studying purposes. Instead of timestamp encoding I went for a more simple solution of separating my model into chunks training each chunk separately then joining them together. And then came the thought, on this diffusion model I had a clear x and y for each layer group making it a lot more efficient than if I train all the layers together. After iv done with 100 epochs for each chunk, I trained the full model for another 100 epochs with the x been the random noise and the label and y the denoised output, and it got worse. Here is a comparison
 
 
 
@@ -20,6 +17,12 @@ All of this came to my mind while I was creating a diffusion model for studying 
 
 
 What I believe is happening is that averaging similar or even all images of the same class has a lower loss than generating extra detail
+Here is the notebook with the diffusion model i created:
+https://github.com/Thiago099/ai-studies/blob/main/diffusion.ipynb
+I'm probably misunderstanding something, and I would like some clarification so I can become a better programmer.
+
+What I believe is happening is that averaging similar or even all images of the same class has a lower loss than generating extra detail.
+Maybe even a large language model can be trained like diffusion models are.
 Here is the notebook with the diffusion model i created:
 https://github.com/Thiago099/ai-studies/blob/main/diffusion.ipynb
 I'm probably misunderstanding something, and I would like some clarification so I can become a better programmer.
