@@ -1,0 +1,20 @@
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+
+
+conda create --name tf python=3.9
+
+
+#to activate and deactivate
+conda deactivate
+
+conda activate tf
+
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+
+pip install --upgrade pip
+
+pip install "tensorflow<2.11" 
+
+pip install matplotlib
+pip install scikit-image
+python -m pip install -U scikit-image[optional]
